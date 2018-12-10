@@ -10,6 +10,7 @@
 		90D3781B21BD7805003928BD /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3781A21BD7805003928BD /* main.swift */; };
 		90D3782221BD80EF003928BD /* Sedan Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3782121BD80EF003928BD /* Sedan Class.swift */; };
 		90D3782421BD812D003928BD /* Truck Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3782321BD812D003928BD /* Truck Class.swift */; };
+		90D3783921BE7523003928BD /* Protocols & Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90D3783821BE7523003928BD /* Protocols & Queue.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -29,6 +30,7 @@
 		90D3781A21BD7805003928BD /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		90D3782121BD80EF003928BD /* Sedan Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Sedan Class.swift"; sourceTree = "<group>"; };
 		90D3782321BD812D003928BD /* Truck Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Truck Class.swift"; sourceTree = "<group>"; };
+		90D3783821BE7523003928BD /* Protocols & Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Protocols & Queue.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 				90D3781A21BD7805003928BD /* main.swift */,
 				90D3782121BD80EF003928BD /* Sedan Class.swift */,
 				90D3782321BD812D003928BD /* Truck Class.swift */,
+				90D3783821BE7523003928BD /* Protocols & Queue.swift */,
 			);
 			path = L6_Anastasia_Uzhentseva;
 			sourceTree = "<group>";
@@ -127,6 +130,7 @@
 			files = (
 				90D3782421BD812D003928BD /* Truck Class.swift in Sources */,
 				90D3781B21BD7805003928BD /* main.swift in Sources */,
+				90D3783921BE7523003928BD /* Protocols & Queue.swift in Sources */,
 				90D3782221BD80EF003928BD /* Sedan Class.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
