@@ -34,6 +34,6 @@ class Sedan: Country, Fuelable {
 
 extension Sedan : CustomStringConvertible {
     var description : String {
-        return "[страна: \(self.country), топлива: \(self.fuel) л.]"
+        return "[страна: \(self.country), топливо: \(self.fuel) л.]"
     }
 }

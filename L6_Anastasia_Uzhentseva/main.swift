@@ -22,8 +22,8 @@ protocol Fuelable {
     var fuel: Double {get set}
 }
 
-// Создаём стек - очередь седанов
-struct Stack <T: Fuelable> {
+// Создаём очередь седанов
+struct Queue <T: Fuelable> {
     
     private var elements: [T] = []
     
@@ -45,8 +45,8 @@ struct Stack <T: Fuelable> {
     }
 }
 
-// Создаём стек 2 - очередь грузовиков
-struct Stack2 <T: Weightable> {
+// Создаём чередь грузовиков
+struct QueueTruck <T: Weightable> {
     
     private var elements: [T] = []
     
@@ -70,7 +70,7 @@ struct Stack2 <T: Weightable> {
 
 // в зону контроля подъезжают легковушки
 
-var stackSedan = Stack<Sedan>()
+var stackSedan = Queue<Sedan>()
 
 stackSedan.push(Sedan(country: "США", fuel: 18))
 //print(stackSedan)
@@ -84,7 +84,7 @@ print("Общий вес провезённого через границу то
 
 // в зону контроля подъезжают грузовики
 
-var stackTruck = Stack2<Truck>()
+var stackTruck = QueueTruck<Truck>()
 
 stackTruck.push(Truck(country: "США", weight: 4500))
 //print(stackTruck)
@@ -96,11 +96,22 @@ stackTruck.push(Truck(country: "Канада", weight: 2500))
 print(stackTruck)
 print("Общий вес пройденного через границу груза \(stackTruck.totalWeight) \n")
 
+// проверяем машины на границе
+
+//var checkVehicle: Bool {
+//    if Sedan.country == "США" || Sedan.country == "Канада" {
+//        return true
+//    } else {
+//        return false
+//    }
+//}
+
+
+
 
 // проезжают по одной машине переходя границу и удаляются из очереди
 stackSedan.delete()
 stackTruck.delete()
-
 
 print(stackSedan)
 print(stackTruck)
@@ -137,21 +148,3 @@ print(stackTruck)
 //filter(array: array, predicate: weightCheck)
 //filter(array: array, predicate: countryCheck)
 //
-
-
-//    func checkFuel () -> String {
-//            if self.fuelLevel < 30 && self.fuelLevel > 0 {
-//                return "Допустимый уровень топлива"
-//            } else {
-//                return "Уровень топлива превышает допустимый"
-//        }
-//        //return "Проверка топлива"
-//    }
-//
-////    func checkOrigin() -> String {
-////
-////    }
-//
-//}
-
-
